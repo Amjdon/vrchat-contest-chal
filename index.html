@@ -17,6 +17,10 @@
     --bronze: #cd7f32;
     --bar: #2b3358;
     --bar-fill: linear-gradient(90deg, #6c8cff, #9d6cff);
+    --good-bg: rgba(46, 160, 86, 0.18);
+    --good-fg: #5fd08a;
+    --bad-bg: rgba(220, 68, 68, 0.16);
+    --bad-fg: #ff8a8a;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -26,13 +30,42 @@
     min-height: 100vh;
     padding: 24px 16px 64px;
   }
-  .container { max-width: 640px; margin: 0 auto; }
+  .container { max-width: 680px; margin: 0 auto; }
 
-  header { text-align: center; margin-bottom: 28px; }
-  header .trophy { font-size: 48px; }
-  header h1 { font-size: 28px; margin-top: 8px; }
+  header { text-align: center; margin-bottom: 20px; }
+  header .trophy { font-size: 44px; }
+  header h1 { font-size: 26px; margin-top: 6px; }
   header p { color: var(--muted); margin-top: 6px; font-size: 14px; }
-  #updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .tile {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 14px 10px;
+    text-align: center;
+  }
+  .tile .value { font-size: 22px; font-weight: 700; }
+  .tile .label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  .search {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--bar);
+    color: var(--text);
+    border-radius: 12px;
+    padding: 11px 16px;
+    font-size: 15px;
+    margin-bottom: 14px;
+    outline: none;
+    font-family: inherit;
+  }
+  .search:focus { border-color: var(--accent); }
+  .search::placeholder { color: var(--muted); }
 
   .row {
     display: flex;
@@ -62,6 +95,7 @@
   .row.r3 { border: 1px solid rgba(205, 127, 50, 0.3); }
 
   .info { flex: 1; min-width: 0; }
+  .name-line { display: flex; align-items: center; gap: 8px; min-width: 0; }
   .name {
     font-size: 17px;
     font-weight: 600;
@@ -69,6 +103,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .chip {
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 2px 8px;
+    flex-shrink: 0;
+    direction: ltr;
+  }
+  .chip.plus { background: var(--good-bg); color: var(--good-fg); }
+  .chip.minus { background: var(--bad-bg); color: var(--bad-fg); }
+
   .bar {
     height: 6px;
     background: var(--bar);
@@ -87,7 +132,7 @@
   .score {
     font-size: 20px;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--text);
     flex-shrink: 0;
     text-align: left;
     min-width: 60px;
@@ -100,9 +145,14 @@
     padding: 40px 0;
     font-size: 16px;
   }
-  .error { color: #ff8a8a; }
+  .error { color: var(--bad-fg); }
 
   footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 32px; }
+
+  @media (max-width: 420px) {
+    .stats { grid-template-columns: 1fr 1fr; }
+    .tile:first-child { grid-column: span 2; }
+  }
 </style>
 </head>
 <body>
@@ -111,8 +161,15 @@
     <div class="trophy">🏆</div>
     <h1>لوحة متصدرين المسابقة</h1>
     <p>كل دقيقة تواجد في العالم = نقاط! النتائج تتحدث تلقائياً</p>
-    <div id="updated"></div>
   </header>
+
+  <div class="stats" id="stats" style="display:none">
+    <div class="tile"><div class="value" id="stat-count">—</div><div class="label">مشارك</div></div>
+    <div class="tile"><div class="value" id="stat-total">—</div><div class="label">مجموع النقاط</div></div>
+    <div class="tile"><div class="value" id="stat-updated">—</div><div class="label">آخر تحديث</div></div>
+  </div>
+
+  <input type="search" class="search" id="search" placeholder="🔍 ابحث عن اسم لاعب..." style="display:none">
 
   <div id="board">
     <div class="empty">جاري تحميل النتائج...</div>
@@ -123,6 +180,7 @@
 
 <script>
 const REFRESH_MS = 30000;
+let allPlayers = [];
 
 function medal(i) {
   if (i === 0) return "🥇";
@@ -137,51 +195,105 @@ function esc(s) {
   return div.innerHTML;
 }
 
-function formatTime(iso) {
-  try {
-    const d = new Date(iso);
-    if (isNaN(d)) return "";
-    return "آخر تحديث: " + d.toLocaleString("ar-SA", { dateStyle: "medium", timeStyle: "short" });
-  } catch (e) { return ""; }
+function relativeTime(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return "—";
+  const mins = Math.round((Date.now() - d.getTime()) / 60000);
+  if (mins < 1) return "الآن";
+  if (mins < 60) return "قبل " + mins + " د";
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return "قبل " + hours + " س";
+  return "قبل " + Math.round(hours / 24) + " يوم";
+}
+
+async function fetchJson(name) {
+  const res = await fetch(name + "?t=" + Date.now(), { cache: "no-store" });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  const text = (await res.text()).replace(/^﻿/, "");
+  return JSON.parse(text);
+}
+
+function render() {
+  const board = document.getElementById("board");
+  const query = (document.getElementById("search").value || "").trim().toLowerCase();
+
+  const shown = query
+    ? allPlayers.filter(p => p.name.toLowerCase().includes(query))
+    : allPlayers;
+
+  if (allPlayers.length === 0) {
+    board.innerHTML = '<div class="empty">لا توجد نتائج بعد... كونوا أول المشاركين! 🎮</div>';
+    return;
+  }
+  if (shown.length === 0) {
+    board.innerHTML = '<div class="empty">لا يوجد لاعب بهذا الاسم</div>';
+    return;
+  }
+
+  const maxScore = Math.max(...allPlayers.map(p => p.final), 1);
+
+  board.innerHTML = shown.map(p => {
+    let chip = "";
+    if (p.adj > 0) chip = `<span class="chip plus">+${p.adj}</span>`;
+    else if (p.adj < 0) chip = `<span class="chip minus">−${Math.abs(p.adj)}</span>`;
+    return `
+      <div class="row r${p.rank}">
+        <div class="rank">${medal(p.rank - 1)}</div>
+        <div class="info">
+          <div class="name-line">
+            <div class="name">${esc(p.name)}</div>
+            ${chip}
+          </div>
+          <div class="bar"><span style="width:${Math.max(2, (p.final / maxScore) * 100)}%"></span></div>
+        </div>
+        <div class="score">${p.final}<small>نقطة</small></div>
+      </div>
+    `;
+  }).join("");
 }
 
 async function load() {
   const board = document.getElementById("board");
   try {
-    const res = await fetch("scores.json?t=" + Date.now(), { cache: "no-store" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
+    // نقرأ النقاط الخام + تعديلات الإدارة، ولو raw.json غير موجود نرجع لـ scores.json
+    let base = null;
+    let admin = { adjustments: {}, banned: [] };
 
-    // نزيل BOM إن وُجد قبل التحليل
-    const text = (await res.text()).replace(/^﻿/, "");
-    const data = JSON.parse(text);
+    try { admin = Object.assign(admin, await fetchJson("admin.json")); } catch (e) {}
 
-    const players = (data.players || []).slice()
-      .sort((a, b) => b.score - a.score);
-
-    document.getElementById("updated").textContent = formatTime(data.updated);
-
-    if (players.length === 0) {
-      board.innerHTML = '<div class="empty">لا توجد نتائج بعد... كونوا أول المشاركين! 🎮</div>';
-      return;
+    try {
+      base = await fetchJson("raw.json");
+    } catch (e) {
+      base = await fetchJson("scores.json");
+      admin = { adjustments: {}, banned: [] }; // scores.json نهائي أصلاً
     }
 
-    const maxScore = Math.max(...players.map(p => p.score), 1);
+    const bannedSet = new Set(admin.banned || []);
+    const adjustments = admin.adjustments || {};
 
-    board.innerHTML = players.map((p, i) => `
-      <div class="row r${i + 1}">
-        <div class="rank">${medal(i)}</div>
-        <div class="info">
-          <div class="name">${esc(p.name)}</div>
-          <div class="bar"><span style="width:${Math.max(2, (p.score / maxScore) * 100)}%"></span></div>
-        </div>
-        <div class="score">${p.score}<small>نقطة</small></div>
-      </div>
-    `).join("");
+    allPlayers = (base.players || [])
+      .filter(p => !bannedSet.has(p.name))
+      .map(p => {
+        const adj = Number(adjustments[p.name] || 0);
+        return { name: p.name, base: p.score, adj: adj, final: Math.max(0, p.score + adj) };
+      })
+      .sort((a, b) => b.final - a.final)
+      .map((p, i) => Object.assign(p, { rank: i + 1 }));
+
+    document.getElementById("stats").style.display = "";
+    document.getElementById("search").style.display = "";
+    document.getElementById("stat-count").textContent = allPlayers.length;
+    document.getElementById("stat-total").textContent =
+      allPlayers.reduce((s, p) => s + p.final, 0).toLocaleString("ar-EG");
+    document.getElementById("stat-updated").textContent = relativeTime(base.updated);
+
+    render();
   } catch (e) {
     board.innerHTML = '<div class="error">تعذر تحميل النتائج — سيُعاد المحاولة تلقائياً</div>';
   }
 }
 
+document.getElementById("search").addEventListener("input", render);
 load();
 setInterval(load, REFRESH_MS);
 </script>
