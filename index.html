@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة متصدرين المسابقة</title>
+<style>
+  :root {
+    --bg: #0f1220;
+    --card: #1a1f35;
+    --card-hover: #222945;
+    --text: #eef1fa;
+    --muted: #8b93b0;
+    --accent: #6c8cff;
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
+    --bar: #2b3358;
+    --bar-fill: linear-gradient(90deg, #6c8cff, #9d6cff);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    min-height: 100vh;
+    padding: 24px 16px 64px;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+
+  header { text-align: center; margin-bottom: 28px; }
+  header .trophy { font-size: 48px; }
+  header h1 { font-size: 28px; margin-top: 8px; }
+  header p { color: var(--muted); margin-top: 6px; font-size: 14px; }
+  #updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--card);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .row:hover { background: var(--card-hover); transform: translateY(-1px); }
+
+  .rank {
+    font-size: 20px;
+    font-weight: 700;
+    width: 42px;
+    text-align: center;
+    flex-shrink: 0;
+    color: var(--muted);
+  }
+  .row.r1 .rank { color: var(--gold); }
+  .row.r2 .rank { color: var(--silver); }
+  .row.r3 .rank { color: var(--bronze); }
+  .row.r1 { border: 1px solid rgba(255, 215, 0, 0.35); }
+  .row.r2 { border: 1px solid rgba(192, 192, 192, 0.25); }
+  .row.r3 { border: 1px solid rgba(205, 127, 50, 0.3); }
+
+  .info { flex: 1; min-width: 0; }
+  .name {
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bar {
+    height: 6px;
+    background: var(--bar);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .bar > span {
+    display: block;
+    height: 100%;
+    background: var(--bar-fill);
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+
+  .score {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+    text-align: left;
+    min-width: 60px;
+  }
+  .score small { display: block; font-size: 11px; color: var(--muted); font-weight: 400; }
+
+  .empty, .error {
+    text-align: center;
+    color: var(--muted);
+    padding: 40px 0;
+    font-size: 16px;
+  }
+  .error { color: #ff8a8a; }
+
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="trophy">🏆</div>
+    <h1>لوحة متصدرين المسابقة</h1>
+    <p>كل دقيقة تواجد في العالم = نقاط! النتائج تتحدث تلقائياً</p>
+    <div id="updated"></div>
+  </header>
+
+  <div id="board">
+    <div class="empty">جاري تحميل النتائج...</div>
+  </div>
+
+  <footer>مسابقة التفاعل في VRChat — الصفحة تتحدث كل 30 ثانية</footer>
+</div>
+
+<script>
+const REFRESH_MS = 30000;
+
+function medal(i) {
+  if (i === 0) return "🥇";
+  if (i === 1) return "🥈";
+  if (i === 2) return "🥉";
+  return (i + 1);
+}
+
+function esc(s) {
+  const div = document.createElement("div");
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+function formatTime(iso) {
+  try {
+    const d = new Date(iso);
+    if (isNaN(d)) return "";
+    return "آخر تحديث: " + d.toLocaleString("ar-SA", { dateStyle: "medium", timeStyle: "short" });
+  } catch (e) { return ""; }
+}
+
+async function load() {
+  const board = document.getElementById("board");
+  try {
+    const res = await fetch("scores.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+
+    // نزيل BOM إن وُجد قبل التحليل
+    const text = (await res.text()).replace(/^﻿/, "");
+    const data = JSON.parse(text);
+
+    const players = (data.players || []).slice()
+      .sort((a, b) => b.score - a.score);
+
+    document.getElementById("updated").textContent = formatTime(data.updated);
+
+    if (players.length === 0) {
+      board.innerHTML = '<div class="empty">لا توجد نتائج بعد... كونوا أول المشاركين! 🎮</div>';
+      return;
+    }
+
+    const maxScore = Math.max(...players.map(p => p.score), 1);
+
+    board.innerHTML = players.map((p, i) => `
+      <div class="row r${i + 1}">
+        <div class="rank">${medal(i)}</div>
+        <div class="info">
+          <div class="name">${esc(p.name)}</div>
+          <div class="bar"><span style="width:${Math.max(2, (p.score / maxScore) * 100)}%"></span></div>
+        </div>
+        <div class="score">${p.score}<small>نقطة</small></div>
+      </div>
+    `).join("");
+  } catch (e) {
+    board.innerHTML = '<div class="error">تعذر تحميل النتائج — سيُعاد المحاولة تلقائياً</div>';
+  }
+}
+
+load();
+setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
