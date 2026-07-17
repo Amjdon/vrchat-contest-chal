@@ -1,9 +1,13 @@
 {
-    "updated":  "2026-07-17T15:36:30Z",
+    "updated":  "2026-07-17T15:38:35Z",
     "players":  [
                     {
                         "name":  "COZMOツ",
                         "score":  70
+                    },
+                    {
+                        "name":  "Breads",
+                        "score":  16
                     }
                 ]
 }
