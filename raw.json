@@ -1,69 +1,69 @@
 {
-    "updated":  "2026-07-24T10:12:41Z",
+    "updated":  "2026-07-24T10:13:46Z",
     "players":  [
                     {
                         "name":  "Rua\u0027",
-                        "score":  50
+                        "score":  51
                     },
                     {
                         "name":  "YUL メ",
-                        "score":  43
+                        "score":  44
                     },
                     {
                         "name":  "dabi`",
-                        "score":  42
+                        "score":  43
                     },
                     {
                         "name":  "Yuta_uru",
-                        "score":  41
+                        "score":  42
                     },
                     {
                         "name":  "smoof22",
                         "score":  41
                     },
                     {
-                        "name":  "2PACٰ",
-                        "score":  39
+                        "name":  "IN0VA",
+                        "score":  40
                     },
                     {
-                        "name":  "IN0VA",
-                        "score":  39
+                        "name":  "2PACٰ",
+                        "score":  40
                     },
                     {
                         "name":  "No-_-love",
-                        "score":  38
+                        "score":  39
                     },
                     {
                         "name":  "МООХ",
-                        "score":  37
-                    },
-                    {
-                        "name":  "COZMOツ",
-                        "score":  34
+                        "score":  38
                     },
                     {
                         "name":  "8llixio 88a4",
-                        "score":  34
+                        "score":  35
+                    },
+                    {
+                        "name":  "COZMOツ",
+                        "score":  35
                     },
                     {
                         "name":  "Silver \u0027",
-                        "score":  31
+                        "score":  32
                     },
                     {
                         "name":  "Orvix",
-                        "score":  28
+                        "score":  29
                     },
                     {
                         "name":  "༺ MSA75 ༻",
-                        "score":  26
-                    },
-                    {
-                        "name":  "redbulll_q",
-                        "score":  24
+                        "score":  27
                     },
                     {
                         "name":  "ZRARKII",
-                        "score":  24
+                        "score":  25
+                    },
+                    {
+                        "name":  "redbulll_q",
+                        "score":  25
                     },
                     {
                         "name":  "Zayed 87ca",
@@ -82,23 +82,27 @@
                         "score":  15
                     },
                     {
-                        "name":  "talytemo3 bd6f",
-                        "score":  14
+                        "name":  "ʙᴀɢʜᴇᴇʀᴀ",
+                        "score":  15
                     },
                     {
-                        "name":  "ʙᴀɢʜᴇᴇʀᴀ",
+                        "name":  "-ʅҽσツ",
                         "score":  14
                     },
                     {
                         "name":  "Flemish",
-                        "score":  13
+                        "score":  14
                     },
                     {
-                        "name":  "-ʅҽσツ",
-                        "score":  13
+                        "name":  "talytemo3 bd6f",
+                        "score":  14
                     },
                     {
                         "name":  "Xx X",
+                        "score":  12
+                    },
+                    {
+                        "name":  "Rwkq",
                         "score":  11
                     },
                     {
@@ -106,27 +110,23 @@
                         "score":  10
                     },
                     {
-                        "name":  "Rwkq",
-                        "score":  10
-                    },
-                    {
                         "name":  "Trax--",
-                        "score":  9
+                        "score":  10
                     },
                     {
                         "name":  "Abeqrererr321 595f",
                         "score":  7
                     },
                     {
-                        "name":  "fr7y",
-                        "score":  5
-                    },
-                    {
                         "name":  "LapizL",
-                        "score":  5
+                        "score":  6
                     },
                     {
                         "name":  "ase-_-fdr",
+                        "score":  6
+                    },
+                    {
+                        "name":  "fr7y",
                         "score":  5
                     },
                     {
@@ -142,19 +142,19 @@
                         "score":  3
                     },
                     {
+                        "name":  "Breads",
+                        "score":  3
+                    },
+                    {
                         "name":  "Boss827 ec3e",
-                        "score":  2
+                        "score":  3
                     },
                     {
                         "name":  "Brotherbroth",
                         "score":  2
                     },
                     {
-                        "name":  "Breads",
-                        "score":  2
-                    },
-                    {
-                        "name":  "『DEVIL BANKER』",
+                        "name":  "ﻢﻜﺤﻳ ﺎﻔﻠﺴﻟﺍ",
                         "score":  2
                     },
                     {
@@ -162,19 +162,23 @@
                         "score":  2
                     },
                     {
-                        "name":  "Hyperborea",
-                        "score":  1
+                        "name":  "『DEVIL BANKER』",
+                        "score":  2
                     },
                     {
-                        "name":  "ﻢﻜﺤﻳ ﺎﻔﻠﺴﻟﺍ",
-                        "score":  1
-                    },
-                    {
-                        "name":  "ziy 1842",
-                        "score":  1
+                        "name":  "Balerion-",
+                        "score":  2
                     },
                     {
                         "name":  "F L Y ?",
+                        "score":  2
+                    },
+                    {
+                        "name":  "Vydn",
+                        "score":  2
+                    },
+                    {
+                        "name":  "ziy 1842",
                         "score":  1
                     },
                     {
@@ -182,11 +186,7 @@
                         "score":  1
                     },
                     {
-                        "name":  "Balerion-",
-                        "score":  1
-                    },
-                    {
-                        "name":  "Vydn",
+                        "name":  "Hyperborea",
                         "score":  1
                     }
                 ]
