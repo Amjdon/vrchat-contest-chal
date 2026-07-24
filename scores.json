@@ -1,5 +1,5 @@
 {
-    "updated":  "2026-07-24T08:47:52Z",
+    "updated":  "2026-07-24T08:48:48Z",
     "players":  [
                     {
                         "name":  "-szá",
@@ -42,15 +42,15 @@
                         "score":  78
                     },
                     {
+                        "name":  "ZRARKII",
+                        "score":  78
+                    },
+                    {
                         "name":  "Trax--",
                         "score":  78
                     },
                     {
                         "name":  "ʙᴀɢʜᴇᴇʀᴀ",
-                        "score":  78
-                    },
-                    {
-                        "name":  "ZRARKII",
                         "score":  78
                     },
                     {
@@ -182,10 +182,6 @@
                         "score":  13
                     },
                     {
-                        "name":  "Bo KoKo",
-                        "score":  11
-                    },
-                    {
                         "name":  "Älexander",
                         "score":  11
                     },
@@ -194,11 +190,15 @@
                         "score":  11
                     },
                     {
-                        "name":  "A2-16",
-                        "score":  10
+                        "name":  "Bo KoKo",
+                        "score":  11
                     },
                     {
                         "name":  "Vior\u0027",
+                        "score":  10
+                    },
+                    {
+                        "name":  "A2-16",
                         "score":  10
                     },
                     {
@@ -226,15 +226,15 @@
                         "score":  4
                     },
                     {
+                        "name":  "~MH~",
+                        "score":  3
+                    },
+                    {
                         "name":  "Yuta_uru",
                         "score":  3
                     },
                     {
                         "name":  "F5M 04bb",
-                        "score":  3
-                    },
-                    {
-                        "name":  "~MH~",
                         "score":  3
                     },
                     {
@@ -268,6 +268,10 @@
                     {
                         "name":  "AthleticLambkin",
                         "score":  1
+                    },
+                    {
+                        "name":  "No-_-love",
+                        "score":  0
                     }
                 ]
 }
