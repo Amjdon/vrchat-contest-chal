@@ -1,5 +1,5 @@
 {
-    "updated":  "2026-07-24T09:45:34Z",
+    "updated":  "2026-07-24T09:46:38Z",
     "players":  [
                     {
                         "name":  "-szá",
@@ -30,6 +30,10 @@
                         "score":  112
                     },
                     {
+                        "name":  "Rwkq",
+                        "score":  102
+                    },
+                    {
                         "name":  "ʙᴀɢʜᴇᴇʀᴀ",
                         "score":  102
                     },
@@ -39,10 +43,6 @@
                     },
                     {
                         "name":  "ZRARKII",
-                        "score":  102
-                    },
-                    {
-                        "name":  "Rwkq",
                         "score":  102
                     },
                     {
@@ -122,11 +122,11 @@
                         "score":  38
                     },
                     {
-                        "name":  "xfatmax 9ec0",
+                        "name":  "vٍِْ",
                         "score":  35
                     },
                     {
-                        "name":  "vٍِْ",
+                        "name":  "xfatmax 9ec0",
                         "score":  35
                     },
                     {
@@ -170,7 +170,7 @@
                         "score":  20
                     },
                     {
-                        "name":  "kelar_27",
+                        "name":  "odod777 76df",
                         "score":  19
                     },
                     {
@@ -178,31 +178,31 @@
                         "score":  19
                     },
                     {
-                        "name":  "odod777 76df",
+                        "name":  "kelar_27",
                         "score":  19
-                    },
-                    {
-                        "name":  "Hassan-1124",
-                        "score":  17
                     },
                     {
                         "name":  "wsk1",
                         "score":  17
                     },
                     {
-                        "name":  "Heavý",
-                        "score":  16
+                        "name":  "Hassan-1124",
+                        "score":  17
                     },
                     {
                         "name":  "- tlo -",
                         "score":  16
                     },
                     {
-                        "name":  "Gabi_-",
-                        "score":  15
+                        "name":  "Heavý",
+                        "score":  16
                     },
                     {
                         "name":  "N790",
+                        "score":  15
+                    },
+                    {
+                        "name":  "Gabi_-",
                         "score":  15
                     },
                     {
@@ -218,11 +218,11 @@
                         "score":  13
                     },
                     {
-                        "name":  "Älexander",
+                        "name":  "Bo KoKo",
                         "score":  11
                     },
                     {
-                        "name":  "Bo KoKo",
+                        "name":  "Älexander",
                         "score":  11
                     },
                     {
@@ -238,15 +238,15 @@
                         "score":  9
                     },
                     {
+                        "name":  "Fta_alba7h 0cbe",
+                        "score":  8
+                    },
+                    {
                         "name":  "Breads",
                         "score":  8
                     },
                     {
                         "name":  "Rhdiq 7e61",
-                        "score":  8
-                    },
-                    {
-                        "name":  "Fta_alba7h 0cbe",
                         "score":  8
                     },
                     {
@@ -262,7 +262,7 @@
                         "score":  5
                     },
                     {
-                        "name":  "ALkinng",
+                        "name":  "MKIU_16 309e",
                         "score":  4
                     },
                     {
@@ -270,11 +270,11 @@
                         "score":  4
                     },
                     {
-                        "name":  "MKIU_16 309e",
+                        "name":  "V1bra",
                         "score":  4
                     },
                     {
-                        "name":  "V1bra",
+                        "name":  "ALkinng",
                         "score":  4
                     },
                     {
@@ -286,11 +286,11 @@
                         "score":  3
                     },
                     {
-                        "name":  "Zayed 87ca",
+                        "name":  "70̅7",
                         "score":  3
                     },
                     {
-                        "name":  "F5M 04bb",
+                        "name":  "Zayed 87ca",
                         "score":  3
                     },
                     {
@@ -298,7 +298,7 @@
                         "score":  3
                     },
                     {
-                        "name":  "70̅7",
+                        "name":  "F5M 04bb",
                         "score":  3
                     },
                     {
@@ -318,15 +318,11 @@
                         "score":  2
                     },
                     {
-                        "name":  "Hyperborea",
-                        "score":  1
-                    },
-                    {
-                        "name":  "abood_X",
-                        "score":  1
-                    },
-                    {
                         "name":  "MarshCake",
+                        "score":  1
+                    },
+                    {
+                        "name":  "kkllog",
                         "score":  1
                     },
                     {
@@ -338,8 +334,16 @@
                         "score":  1
                     },
                     {
-                        "name":  "kkllog",
+                        "name":  "abood_X",
                         "score":  1
+                    },
+                    {
+                        "name":  "Hyperborea",
+                        "score":  1
+                    },
+                    {
+                        "name":  "МООХ",
+                        "score":  0
                     }
                 ]
 }
