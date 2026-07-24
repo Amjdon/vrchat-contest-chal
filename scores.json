@@ -1,77 +1,77 @@
 {
-    "updated":  "2026-07-24T11:32:00Z",
+    "updated":  "2026-07-24T11:33:04Z",
     "players":  [
                     {
                         "name":  "Rua\u0027",
-                        "score":  317
+                        "score":  329
                     },
                     {
                         "name":  "IN0VA",
-                        "score":  126
+                        "score":  128
                     },
                     {
                         "name":  "Orvix",
-                        "score":  126
+                        "score":  128
                     },
                     {
                         "name":  "Yuta_uru",
-                        "score":  119
+                        "score":  121
                     },
                     {
                         "name":  "2PACٰ",
-                        "score":  117
+                        "score":  119
                     },
                     {
                         "name":  "МООХ",
-                        "score":  115
+                        "score":  117
                     },
                     {
                         "name":  "COZMOツ",
-                        "score":  112
+                        "score":  114
                     },
                     {
                         "name":  "8llixio 88a4",
-                        "score":  109
+                        "score":  111
                     },
                     {
                         "name":  "Silver \u0027",
-                        "score":  109
+                        "score":  111
                     },
                     {
                         "name":  "ZRARKII",
-                        "score":  102
+                        "score":  104
                     },
                     {
                         "name":  "l6voxe",
-                        "score":  101
+                        "score":  103
                     },
                     {
                         "name":  "ʙᴀɢʜᴇᴇʀᴀ",
-                        "score":  92
+                        "score":  94
+                    },
+                    {
+                        "name":  "Rwkq",
+                        "score":  90
+                    },
+                    {
+                        "name":  "Trax--",
+                        "score":  89
                     },
                     {
                         "name":  "-ʅҽσツ",
                         "score":  89
                     },
                     {
-                        "name":  "Rwkq",
-                        "score":  88
+                        "name":  "F L Y ?",
+                        "score":  81
                     },
                     {
-                        "name":  "Trax--",
-                        "score":  87
+                        "name":  "Vydn",
+                        "score":  81
                     },
                     {
                         "name":  "Flemish",
                         "score":  80
-                    },
-                    {
-                        "name":  "Vydn",
-                        "score":  79
-                    },
-                    {
-                        "name":  "F L Y ?",
-                        "score":  79
                     },
                     {
                         "name":  "YUL メ",
@@ -83,30 +83,30 @@
                     },
                     {
                         "name":  "《 Dai 》",
-                        "score":  74
+                        "score":  76
+                    },
+                    {
+                        "name":  "Simo Hayha\u0027",
+                        "score":  73
+                    },
+                    {
+                        "name":  "ﻢﻜﺤﻳ ﺎﻔﻠﺴﻟﺍ",
+                        "score":  73
+                    },
+                    {
+                        "name":  "Gabi_-",
+                        "score":  72
                     },
                     {
                         "name":  "LapizL",
                         "score":  72
                     },
                     {
-                        "name":  "Simo Hayha\u0027",
-                        "score":  71
-                    },
-                    {
-                        "name":  "ﻢﻜﺤﻳ ﺎﻔﻠﺴﻟﺍ",
-                        "score":  71
-                    },
-                    {
-                        "name":  "Gabi_-",
-                        "score":  70
+                        "name":  "layla-TheMoon",
+                        "score":  65
                     },
                     {
                         "name":  "Itsuki奈良",
-                        "score":  63
-                    },
-                    {
-                        "name":  "layla-TheMoon",
                         "score":  63
                     },
                     {
@@ -115,7 +115,7 @@
                     },
                     {
                         "name":  "Abo mhmad",
-                        "score":  56
+                        "score":  58
                     },
                     {
                         "name":  "Breads",
@@ -138,6 +138,10 @@
                         "score":  42
                     },
                     {
+                        "name":  "ItoshiS",
+                        "score":  41
+                    },
+                    {
                         "name":  "smoof22",
                         "score":  41
                     },
@@ -146,16 +150,12 @@
                         "score":  41
                     },
                     {
-                        "name":  "ItoshiS",
-                        "score":  39
+                        "name":  "RYANِ",
+                        "score":  38
                     },
                     {
                         "name":  "アブ助殿 NightmareF",
                         "score":  37
-                    },
-                    {
-                        "name":  "RYANِ",
-                        "score":  36
                     },
                     {
                         "name":  "༺ MSA75 ༻",
@@ -166,32 +166,36 @@
                         "score":  31
                     },
                     {
-                        "name":  "Super-hypeKSA",
-                        "score":  27
-                    },
-                    {
                         "name":  "『Nᴘᴇメ』",
-                        "score":  27
+                        "score":  29
                     },
                     {
                         "name":  "ﻲﺗﺪﺟ ﻰﻠﺣ",
-                        "score":  27
+                        "score":  29
+                    },
+                    {
+                        "name":  "Super-hypeKSA",
+                        "score":  29
+                    },
+                    {
+                        "name":  "ri_ner",
+                        "score":  26
+                    },
+                    {
+                        "name":  "Likenooneelse",
+                        "score":  25
                     },
                     {
                         "name":  "M J _",
                         "score":  24
                     },
                     {
-                        "name":  "ri_ner",
-                        "score":  24
-                    },
-                    {
-                        "name":  "Likenooneelse",
-                        "score":  23
-                    },
-                    {
                         "name":  "AcidNeb",
-                        "score":  20
+                        "score":  22
+                    },
+                    {
+                        "name":  "TheHybrid",
+                        "score":  19
                     },
                     {
                         "name":  "Ditto7",
@@ -210,10 +214,6 @@
                         "score":  17
                     },
                     {
-                        "name":  "TheHybrid",
-                        "score":  17
-                    },
-                    {
                         "name":  "Heavý",
                         "score":  16
                     },
@@ -226,23 +226,27 @@
                         "score":  14
                     },
                     {
+                        "name":  "Nmoryy",
+                        "score":  14
+                    },
+                    {
                         "name":  "talytemo3 bd6f",
                         "score":  14
                     },
                     {
-                        "name":  "Boss827 ec3e",
-                        "score":  12
+                        "name":  "Spiral09",
+                        "score":  14
                     },
                     {
-                        "name":  "Spiral09",
-                        "score":  12
+                        "name":  "Shifa2012",
+                        "score":  13
                     },
                     {
                         "name":  "Alnajla",
                         "score":  12
                     },
                     {
-                        "name":  "Nmoryy",
+                        "name":  "Boss827 ec3e",
                         "score":  12
                     },
                     {
@@ -250,11 +254,7 @@
                         "score":  12
                     },
                     {
-                        "name":  "Shifa2012",
-                        "score":  11
-                    },
-                    {
-                        "name":  "E B R A",
+                        "name":  "abood_X",
                         "score":  10
                     },
                     {
@@ -262,7 +262,7 @@
                         "score":  10
                     },
                     {
-                        "name":  "abood_X",
+                        "name":  "E B R A",
                         "score":  10
                     },
                     {
@@ -282,6 +282,10 @@
                         "score":  6
                     },
                     {
+                        "name":  "fr7y",
+                        "score":  5
+                    },
+                    {
                         "name":  "zeex449 99b2",
                         "score":  5
                     },
@@ -290,23 +294,19 @@
                         "score":  5
                     },
                     {
-                        "name":  "fr7y",
-                        "score":  5
+                        "name":  "Youssef88me",
+                        "score":  4
                     },
                     {
                         "name":  "ﾒᴋɴɪғᴇᴄᴜᴛsﾒ",
                         "score":  4
                     },
                     {
-                        "name":  "Youssef88me",
+                        "name":  "愛Ｓａｙｏｎａｒａ愛",
                         "score":  4
                     },
                     {
                         "name":  "melancholy_1",
-                        "score":  4
-                    },
-                    {
-                        "name":  "愛Ｓａｙｏｎａｒａ愛",
                         "score":  4
                     },
                     {
@@ -318,7 +318,7 @@
                         "score":  3
                     },
                     {
-                        "name":  "AntiTyrant",
+                        "name":  "M7MD_38",
                         "score":  3
                     },
                     {
@@ -326,19 +326,19 @@
                         "score":  3
                     },
                     {
-                        "name":  "M67S S",
-                        "score":  3
-                    },
-                    {
                         "name":  "ﻲﺗﺪﺟ ةﺩﺎﺠﺳ",
                         "score":  3
                     },
                     {
-                        "name":  "M7MD_38",
+                        "name":  "AntiTyrant",
                         "score":  3
                     },
                     {
-                        "name":  "『DEVIL BANKER』",
+                        "name":  "M67S S",
+                        "score":  3
+                    },
+                    {
+                        "name":  "Faisal․F a923",
                         "score":  2
                     },
                     {
@@ -346,7 +346,7 @@
                         "score":  2
                     },
                     {
-                        "name":  "Faisal․F a923",
+                        "name":  "『DEVIL BANKER』",
                         "score":  2
                     },
                     {
@@ -362,11 +362,11 @@
                         "score":  2
                     },
                     {
-                        "name":  "｢ S A L E H ｣",
+                        "name":  "s̷w̷o̷r̷d̷",
                         "score":  2
                     },
                     {
-                        "name":  "s̷w̷o̷r̷d̷",
+                        "name":  "｢ S A L E H ｣",
                         "score":  2
                     },
                     {
@@ -374,7 +374,7 @@
                         "score":  2
                     },
                     {
-                        "name":  "ziy 1842",
+                        "name":  "Y-uta",
                         "score":  1
                     },
                     {
@@ -382,15 +382,7 @@
                         "score":  1
                     },
                     {
-                        "name":  "Y-uta",
-                        "score":  1
-                    },
-                    {
-                        "name":  "Leen541 4c35",
-                        "score":  1
-                    },
-                    {
-                        "name":  "tor\u0027",
+                        "name":  "ziy 1842",
                         "score":  1
                     },
                     {
@@ -399,6 +391,14 @@
                     },
                     {
                         "name":  "Hyperborea",
+                        "score":  1
+                    },
+                    {
+                        "name":  "Leen541 4c35",
+                        "score":  1
+                    },
+                    {
+                        "name":  "tor\u0027",
                         "score":  1
                     }
                 ]
