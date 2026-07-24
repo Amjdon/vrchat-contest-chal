@@ -1,5 +1,5 @@
 {
-    "updated":  "2026-07-24T10:54:27Z",
+    "updated":  "2026-07-24T10:55:31Z",
     "players":  [
                     {
                         "name":  "Rua\u0027",
@@ -30,19 +30,19 @@
                         "score":  77
                     },
                     {
-                        "name":  "No-_-love",
-                        "score":  76
-                    },
-                    {
                         "name":  "COZMOツ",
                         "score":  76
                     },
                     {
-                        "name":  "8llixio 88a4",
-                        "score":  73
+                        "name":  "No-_-love",
+                        "score":  76
                     },
                     {
                         "name":  "Silver \u0027",
+                        "score":  73
+                    },
+                    {
+                        "name":  "8llixio 88a4",
                         "score":  73
                     },
                     {
@@ -62,11 +62,11 @@
                         "score":  55
                     },
                     {
-                        "name":  "l6voxe",
+                        "name":  "Flemish",
                         "score":  55
                     },
                     {
-                        "name":  "Flemish",
+                        "name":  "l6voxe",
                         "score":  55
                     },
                     {
@@ -86,11 +86,11 @@
                         "score":  51
                     },
                     {
-                        "name":  "LapizL",
+                        "name":  "ase-_-fdr",
                         "score":  47
                     },
                     {
-                        "name":  "ase-_-fdr",
+                        "name":  "LapizL",
                         "score":  47
                     },
                     {
@@ -182,11 +182,11 @@
                         "score":  14
                     },
                     {
-                        "name":  "Boss827 ec3e",
+                        "name":  "Alnajla",
                         "score":  12
                     },
                     {
-                        "name":  "Alnajla",
+                        "name":  "Boss827 ec3e",
                         "score":  12
                     },
                     {
@@ -202,11 +202,11 @@
                         "score":  10
                     },
                     {
-                        "name":  "MrKTAL",
+                        "name":  "BashPotato®",
                         "score":  9
                     },
                     {
-                        "name":  "BashPotato®",
+                        "name":  "MrKTAL",
                         "score":  9
                     },
                     {
@@ -238,10 +238,6 @@
                         "score":  3
                     },
                     {
-                        "name":  "رﺎﻤﻋ-",
-                        "score":  3
-                    },
-                    {
                         "name":  "ItoshiS",
                         "score":  3
                     },
@@ -250,15 +246,15 @@
                         "score":  3
                     },
                     {
-                        "name":  "DependentNet99",
+                        "name":  "رﺎﻤﻋ-",
+                        "score":  3
+                    },
+                    {
+                        "name":  "Brotherbroth",
                         "score":  2
                     },
                     {
                         "name":  "『DEVIL BANKER』",
-                        "score":  2
-                    },
-                    {
-                        "name":  "Brotherbroth",
                         "score":  2
                     },
                     {
@@ -270,19 +266,23 @@
                         "score":  2
                     },
                     {
-                        "name":  "kkllog",
+                        "name":  "DependentNet99",
                         "score":  2
                     },
                     {
-                        "name":  "Elvirà",
-                        "score":  1
+                        "name":  "kkllog",
+                        "score":  2
                     },
                     {
                         "name":  "ziy 1842",
                         "score":  1
                     },
                     {
-                        "name":  "ｅｖｉｌ",
+                        "name":  "Elvirà",
+                        "score":  1
+                    },
+                    {
+                        "name":  "tor\u0027",
                         "score":  1
                     },
                     {
@@ -294,8 +294,16 @@
                         "score":  1
                     },
                     {
-                        "name":  "tor\u0027",
+                        "name":  "ｅｖｉｌ",
                         "score":  1
+                    },
+                    {
+                        "name":  "E B R A",
+                        "score":  0
+                    },
+                    {
+                        "name":  "RYANِ",
+                        "score":  0
                     }
                 ]
 }
