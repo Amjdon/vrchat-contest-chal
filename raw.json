@@ -1,5 +1,5 @@
 {
-    "updated":  "2026-07-24T09:32:52Z",
+    "updated":  "2026-07-24T09:34:02Z",
     "players":  [
                     {
                         "name":  "-szá",
@@ -214,11 +214,11 @@
                         "score":  13
                     },
                     {
-                        "name":  "Älexander",
+                        "name":  "Bo KoKo",
                         "score":  11
                     },
                     {
-                        "name":  "Bo KoKo",
+                        "name":  "Älexander",
                         "score":  11
                     },
                     {
@@ -254,7 +254,7 @@
                         "score":  4
                     },
                     {
-                        "name":  "ALkinng",
+                        "name":  "melancholy_1",
                         "score":  4
                     },
                     {
@@ -262,19 +262,19 @@
                         "score":  4
                     },
                     {
+                        "name":  "ALkinng",
+                        "score":  4
+                    },
+                    {
                         "name":  "ziy 1842",
                         "score":  3
                     },
                     {
-                        "name":  "melancholy_1",
-                        "score":  3
-                    },
-                    {
-                        "name":  "ahmd99",
-                        "score":  3
-                    },
-                    {
                         "name":  "~MH~",
+                        "score":  3
+                    },
+                    {
+                        "name":  "fr7y",
                         "score":  3
                     },
                     {
@@ -286,11 +286,11 @@
                         "score":  3
                     },
                     {
-                        "name":  "Rua\u0027",
-                        "score":  2
+                        "name":  "ahmd99",
+                        "score":  3
                     },
                     {
-                        "name":  "It\u0027sMeْ",
+                        "name":  "Rua\u0027",
                         "score":  2
                     },
                     {
@@ -298,20 +298,12 @@
                         "score":  2
                     },
                     {
+                        "name":  "It\u0027sMeْ",
+                        "score":  2
+                    },
+                    {
                         "name":  "ase-_-fdr",
                         "score":  2
-                    },
-                    {
-                        "name":  "fr7y",
-                        "score":  2
-                    },
-                    {
-                        "name":  "MarshCake",
-                        "score":  1
-                    },
-                    {
-                        "name":  "kkllog",
-                        "score":  1
                     },
                     {
                         "name":  "_joel",
@@ -319,6 +311,14 @@
                     },
                     {
                         "name":  "AthleticLambkin",
+                        "score":  1
+                    },
+                    {
+                        "name":  "kkllog",
+                        "score":  1
+                    },
+                    {
+                        "name":  "MarshCake",
                         "score":  1
                     }
                 ]
