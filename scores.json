@@ -1,29 +1,29 @@
 {
-    "updated":  "2026-07-25T20:06:52Z",
+    "updated":  "2026-07-25T20:08:27Z",
     "players":  [
                     {
                         "name":  "Rua\u0027",
-                        "score":  4868
+                        "score":  4870
                     },
                     {
                         "name":  "l6voxe",
-                        "score":  3942
+                        "score":  3944
                     },
                     {
                         "name":  "ryupudding",
-                        "score":  2334
+                        "score":  2346
                     },
                     {
                         "name":  "ZRARKII",
-                        "score":  2070
+                        "score":  2072
                     },
                     {
                         "name":  "Silver \u0027",
-                        "score":  1563
+                        "score":  1565
                     },
                     {
                         "name":  "Orvix",
-                        "score":  1282
+                        "score":  1284
                     },
                     {
                         "name":  "ase-_-fdr",
@@ -59,7 +59,7 @@
                     },
                     {
                         "name":  "HOSS GG",
-                        "score":  441
+                        "score":  443
                     },
                     {
                         "name":  "IN0VA",
@@ -75,7 +75,7 @@
                     },
                     {
                         "name":  "I Y E D",
-                        "score":  355
+                        "score":  357
                     },
                     {
                         "name":  "ʙᴇᴇɴ",
@@ -127,7 +127,7 @@
                     },
                     {
                         "name":  "Winston_Red 81f2",
-                        "score":  180
+                        "score":  182
                     },
                     {
                         "name":  "Spiral09",
@@ -151,14 +151,18 @@
                     },
                     {
                         "name":  "ｍ_ｒｙ",
-                        "score":  153
+                        "score":  155
                     },
                     {
                         "name":  "~67~",
-                        "score":  146
+                        "score":  148
                     },
                     {
                         "name":  "D H O O M",
+                        "score":  144
+                    },
+                    {
+                        "name":  "『kndr』",
                         "score":  144
                     },
                     {
@@ -170,10 +174,6 @@
                         "score":  143
                     },
                     {
-                        "name":  "『kndr』",
-                        "score":  142
-                    },
-                    {
                         "name":  "Ëcho",
                         "score":  136
                     },
@@ -183,7 +183,7 @@
                     },
                     {
                         "name":  "『slayer』",
-                        "score":  131
+                        "score":  133
                     },
                     {
                         "name":  "\u0027AKO\u0027",
@@ -294,12 +294,12 @@
                         "score":  80
                     },
                     {
-                        "name":  "Super-hypeKSA",
-                        "score":  79
+                        "name":  "Al-7swi",
+                        "score":  80
                     },
                     {
-                        "name":  "Al-7swi",
-                        "score":  78
+                        "name":  "Super-hypeKSA",
+                        "score":  79
                     },
                     {
                         "name":  "YUL メ",
@@ -390,31 +390,31 @@
                         "score":  46
                     },
                     {
-                        "name":  "Sniper3vrs be9a",
-                        "score":  43
-                    },
-                    {
                         "name":  "protocoll",
                         "score":  43
                     },
                     {
-                        "name":  "Maleek01_10",
-                        "score":  42
+                        "name":  "Sniper3vrs be9a",
+                        "score":  43
+                    },
+                    {
+                        "name":  "AntiTyrant",
+                        "score":  43
                     },
                     {
                         "name":  "Phantora a8a7",
                         "score":  42
                     },
                     {
-                        "name":  "rayano201",
-                        "score":  41
-                    },
-                    {
-                        "name":  "AntiTyrant",
-                        "score":  41
+                        "name":  "Maleek01_10",
+                        "score":  42
                     },
                     {
                         "name":  "『Nᴘᴇメ』",
+                        "score":  41
+                    },
+                    {
+                        "name":  "rayano201",
                         "score":  41
                     },
                     {
@@ -442,11 +442,11 @@
                         "score":  37
                     },
                     {
-                        "name":  "White~Devil",
+                        "name":  "MAROCOS",
                         "score":  36
                     },
                     {
-                        "name":  "MAROCOS",
+                        "name":  "White~Devil",
                         "score":  36
                     },
                     {
@@ -466,19 +466,19 @@
                         "score":  34
                     },
                     {
-                        "name":  "Dahyah",
-                        "score":  32
-                    },
-                    {
                         "name":  "Likenooneelse",
                         "score":  32
                     },
                     {
-                        "name":  "ri_ner",
-                        "score":  30
+                        "name":  "Dahyah",
+                        "score":  32
                     },
                     {
                         "name":  "Aboudy",
+                        "score":  30
+                    },
+                    {
+                        "name":  "ri_ner",
                         "score":  30
                     },
                     {
@@ -490,28 +490,24 @@
                         "score":  28
                     },
                     {
-                        "name":  "『JR』",
+                        "name":  "ٌ四。ِ",
                         "score":  27
                     },
                     {
-                        "name":  "ٌ四。ِ",
-                        "score":  26
+                        "name":  "『JR』",
+                        "score":  27
                     },
                     {
                         "name":  "『DEVIL BANKER』",
                         "score":  26
                     },
                     {
-                        "name":  "Olombos",
-                        "score":  25
-                    },
-                    {
                         "name":  "wwad33626 b295",
                         "score":  25
                     },
                     {
-                        "name":  "N M R",
-                        "score":  24
+                        "name":  "Olombos",
+                        "score":  25
                     },
                     {
                         "name":  "kddq8",
@@ -522,11 +518,15 @@
                         "score":  24
                     },
                     {
-                        "name":  "Velveť",
-                        "score":  23
+                        "name":  "N M R",
+                        "score":  24
                     },
                     {
                         "name":  "AHMAD_BLACK",
+                        "score":  23
+                    },
+                    {
+                        "name":  "Velveť",
                         "score":  23
                     },
                     {
@@ -534,11 +534,11 @@
                         "score":  23
                     },
                     {
-                        "name":  "Pookieangel",
+                        "name":  "akane -",
                         "score":  22
                     },
                     {
-                        "name":  "akane -",
+                        "name":  "Pookieangel",
                         "score":  22
                     },
                     {
